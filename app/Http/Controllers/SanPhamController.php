@@ -33,7 +33,6 @@ class SanPhamController extends Controller
     	}
     	return 0;
     }
-
     //Sua sp
     public function edit($id,Request $request){
     	$sp = sanpham::find($id);
@@ -50,7 +49,7 @@ class SanPhamController extends Controller
     		$sp->Mota = $request['Mota'];
     	}
     	if($sp->save()){
-    		return sanpham::find($id);//Tim sp da sua
+    		return sanpham::find($id);//Tim sp de sua find($id)
     	}
     	return 0;
     }

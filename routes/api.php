@@ -15,8 +15,8 @@ use Illuminate\Http\Request;
 
 
 Route::get('sanphams','SanPhamController@getAll');
-Route::get('sanphams/{id}','SanPhamController@getById');
 
+Route::get('sanphams/{id}','SanPhamController@getById');
 
 Route::post('sanphams/add','SanPhamController@add');
 
